@@ -148,18 +148,4 @@ createSkillsChart(frameworks, '.chart-container-frameworks');
 createSkillsChart(databases, '.chart-container-databases'); 
 skillsObserver.observe(skillsGrid);
 
-function changeHeight(){
-    const columns = document.querySelectorAll('.column');
-    var height = Math.max (100 - window.scrollY);
-    //var scroll = (window.scrollY/5);
-    columns.forEach((col, key) => {
-    if(height > 0){
-    col.style.height = height + '%';
-    }else{
-    col.style.height = 0;
-    }
-    })
-   }
-   window.addEventListener('scroll', function(){
-    requestAnimationFrame(changeHeight);
-   })
+

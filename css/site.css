@@ -298,3 +298,23 @@ footer {
       margin-bottom: 20px;
   }
 }
+
+/* Stilovi za društvene mreže */
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; /* Razmak između ikona */
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 1.5rem; /* Veličina ikona */
+  color: #000; /* Promijeni u odgovarajuću boju */
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #007bff; /* Boja pri prelasku mišem */
+}
+
