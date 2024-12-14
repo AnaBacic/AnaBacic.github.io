@@ -148,4 +148,19 @@ createSkillsChart(frameworks, '.chart-container-frameworks');
 createSkillsChart(databases, '.chart-container-databases'); 
 skillsObserver.observe(skillsGrid);
 
+// Selektuj hamburger dugme i navigaciju
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+// Dodaj event listener za klik na hamburger
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+
+// (Neobavezno) Klik izvan navigacije zatvara izbornik
+document.addEventListener('click', (event) => {
+    if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+        navMenu.classList.remove('active');
+    }
+});
 
