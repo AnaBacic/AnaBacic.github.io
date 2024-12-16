@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vještine | Ana Bačić</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Početna</a></li>
+                <li><a href="about.html">O meni</a></li>
+                <li><a href="services.html" class="active">Vještine</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section class="skills">
+        <h1 class="section-title">Vještine</h1>
+        <div class="skills-container">
+            <!-- Prva kartica -->
+            <div class="skill-box">
+                <div class="icon">&#x1F4F1;</div>
+                <h3>WEB DIZAJN I RAZVOJ</h3>
+                <p>HTML, CSS, JavaScript, Bootstrap</p>
+            </div>
+            <!-- Druga kartica -->
+            <div class="skill-box">
+                <div class="icon">&#128187;</div>
+                <h3>PROGRAMIRANJE</h3>
+                <p>Python, C++, osnove algoritama i rješavanje problema</p>
+            </div>
+            <!-- Treća kartica -->
+            <div class="skill-box">
+                <div class="icon">&#x1F4F8;</div>
+                <h3>MULTIMEDIJA</h3>
+                <p>Adobe Photoshop, Illustrator, Blender</p>
+            </div>
+            <!-- Četvrta kartica -->
+            <div class="skill-box">
+                <div class="icon">&#129309;</div>
+                <h3>TIMSKI RAD</h3>
+                <p>Suradnja na projektima, komunikacija i koordinacija</p>
+            </div>
+            <!-- Peta kartica -->
+            <div class="skill-box">
+                <div class="icon">&#127912;</div>
+                <h3>KREATIVNOST</h3>
+                <p>Multimedijski projekti, vizualni dizajn, rješenja problema</p>
+            </div>
+            <!-- Šesta kartica -->
+            <div class="skill-box">
+                <div class="icon">&#128269;</div>
+                <h3>SNALAŽLJIVOST</h3>
+                <p>Pronalazak rješenja u svakodnevnim izazovima</p>
+            </div>
+
+            <div id="skills-chart" style="width: 100%;"></div>
+
+        </div>
+    </section>
+    <script src="script2.js"></script>
+    <script src="navigacija.js"></script>
+    <script src="D3.js"></script>
+
+</body>
+</html>
